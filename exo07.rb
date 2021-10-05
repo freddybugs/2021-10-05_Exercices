@@ -1,4 +1,4 @@
-puts "Bonjour, Choisi un chiffre entre 1 et 20 :"
+puts "Bonjour, Choisi un chiffre (de preference entre 1 et 20) :"
 print "> "
 user_num = gets.chomp.to_i+1
 

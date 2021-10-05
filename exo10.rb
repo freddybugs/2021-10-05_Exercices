@@ -1,13 +1,14 @@
 puts "Bonjour, qu'elle est t'on année de naiscance ?"
 print "> "
-user_birth = gets.chomp.to_i-1
-n = 2021 - user_birth
+user_birth = gets.chomp.to_i # Choisir une année
+n = 2021 - user_birth # 2021 - année -> variable "n"
+age = 0 # Variable "age" avec la valeur de depart
 
-x = -1
-n.times do
-  user_birth += 1
-  x += 1
-  puts "Em #{user_birth} tu avais #{x} ans"
+n.times do # Loop
+  puts "Em #{user_birth} tu avais #{age} ans"
+  user_birth += 1 # Incrementation de l'année
+  age += 1 # Incrementation de l'age
 end
 
-
+# Final avec l'anné en cours
+puts "Maintenant, en #{user_birth} tu a #{age} ans"
